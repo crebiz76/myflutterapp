@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Character card',
       home: MyCard(),
     );
@@ -40,6 +41,18 @@ class MyCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/baby.PNG'),
+                radius: 60.0,
+              ),
+            ),
+            Divider(
+              height: 60.0,
+              color: Colors.grey[850],
+              thickness: 0.5,
+              endIndent: 30.0,
+            ),
             Text(
               'NAME',
               style: TextStyle(
@@ -58,7 +71,84 @@ class MyCard extends StatelessWidget {
                 fontSize: 28.0,
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Text(
+              'AGE',
+              style: TextStyle(
+                color: Colors.white,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              '25 Months old',
+              style: TextStyle(
+                color: Colors.white,
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  'Eating well...',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    letterSpacing: 1.0,
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  'Pooping well...',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    letterSpacing: 1.0,
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  'Sleeping well...',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    letterSpacing: 1.0,
+                  ),
+                ),
+              ],
+            ),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/babys.png'),
+                radius: 40.0,
+                backgroundColor: Colors.amber[800],
+              ),
+            ),
           ],
         ),
       ),
