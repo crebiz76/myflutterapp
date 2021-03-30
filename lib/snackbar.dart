@@ -27,14 +27,15 @@ class MyPage extends StatelessWidget {
         body: Builder(
           builder: (BuildContext ctx) {
             return Center(
-              child: FlatButton(
+              // child: FlatButton(
+              child: TextButton(
                 child: Text(
                   'Show me',
                   style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
-                color: Colors.red,
+                // color: Colors.red,
                 onPressed: () {
                   Scaffold.of(ctx).showSnackBar(SnackBar(
                     content: Text('Hello'),
