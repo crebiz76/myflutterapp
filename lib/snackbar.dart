@@ -25,19 +25,19 @@ class MyPage extends StatelessWidget {
           centerTitle: true,
         ),
         body: Builder(
-          builder: (BuildContext context) {
+          builder: (BuildContext ctx) {
             return Center(
               child: FlatButton(
                 child: Text(
-                  'Show me, please',
+                  'Show me',
                   style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
                 color: Colors.red,
                 onPressed: () {
-                  Scaffold.of(context).showSnackBar(SnackBar(
-                    content: Text('Hello, world'),
+                  Scaffold.of(ctx).showSnackBar(SnackBar(
+                    content: Text('Hello'),
                   ));
                 },
               ),
