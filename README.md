@@ -80,4 +80,4 @@ samples, guidance on mobile development, and a full API reference.
 - 페이지 이동 기능 구현 
 
 ## 23. Navigator와 pushNamed
-
+- Quiz1. 페이지이동 문제점 해결 방법

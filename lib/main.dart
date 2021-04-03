@@ -9,12 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (context) => ScreenA(),
-        '/b': (context) => ScreenB(),
-        '/c': (context) => ScreenC(),
-      },
+      home: Center(
+        child: ElevatedButton(
+          child: Text('Go to ScreenD'),
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ScreenD()),
+          ),
+        ),
+      ),
     );
   }
 }
@@ -110,6 +113,17 @@ class ScreenC extends StatelessWidget {
                 }),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ScreenD extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Hi. there!'),
       ),
     );
   }
