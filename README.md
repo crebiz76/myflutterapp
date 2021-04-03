@@ -84,3 +84,5 @@ samples, guidance on mobile development, and a full API reference.
 - String interpolatrion
 - Collection/Generic
 - Quiz1. 페이지이동 문제점 해결 방법
+
+## 25. Generic
