@@ -9,12 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: ElevatedButton(
-          child: Text('Go to ScreenD'),
-          onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ScreenD()),
+      home: Builder(
+        builder: (context) => Center(
+          child: ElevatedButton(
+            child: Text('Go to ScreenD'),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ScreenD()),
+            ),
           ),
         ),
       ),
