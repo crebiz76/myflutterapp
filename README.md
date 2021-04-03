@@ -78,3 +78,6 @@ samples, guidance on mobile development, and a full API reference.
 - Navigator 정의와 push, pop 함수, stack 자료구조
 - MaterialPageRoute 위젯과 context
 - 페이지 이동 기능 구현 
+
+## 23. Navigator와 pushNamed
+
